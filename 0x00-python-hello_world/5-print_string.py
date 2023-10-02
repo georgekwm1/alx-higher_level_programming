@@ -2,4 +2,4 @@
 str = "Holberton School"
 str_3times = 3 * str
 str_9char = str[:10]
-print(f"{str_3times} {str_9char}")
+print(f"{str_3times}\n{str_9char}")
