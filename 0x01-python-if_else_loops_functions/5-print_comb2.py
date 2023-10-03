@@ -2,5 +2,5 @@
 for value in range(0, 100):
     if value < 99:
         print("{:02}".format(value), end=", ")
-    else:    
+    else:
         print("{:02}".format(value))
