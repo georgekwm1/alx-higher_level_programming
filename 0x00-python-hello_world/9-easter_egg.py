@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-script = "\"The Zen of Python\", by Tim Peters"
+with open('PythonZen.txt', 'r') as file:
+    script = file.read()
 print(script)
