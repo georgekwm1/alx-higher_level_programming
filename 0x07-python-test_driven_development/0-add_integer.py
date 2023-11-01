@@ -3,7 +3,6 @@
 """Definition of the addition function"""
 
 def add_integer(a, b=98):
-    
     """
     This function adds two integers.
 
