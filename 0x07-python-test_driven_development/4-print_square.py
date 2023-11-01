@@ -1,5 +1,15 @@
 #!/usr/bin/python3
+"""Defines the number of '#' to print"""
+
 def print_square(size):
+    """
+    This function adds two integers.
+
+    Args:
+    size (int): number of '#' to print.
+    Returns:
+    Prints '#' based on the number specified.
+    """
     symbol = "#"
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
