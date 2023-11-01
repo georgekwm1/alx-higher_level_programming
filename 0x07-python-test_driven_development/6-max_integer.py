@@ -9,9 +9,6 @@ def max_integer(list=[]):
     """
     if len(list) == 0:
         return None
-    if not all(isinstance(item, (int, float)) for item in list):
-        raise TypeError("List must contain only numbers")
-
     result = list[0]
     i = 1
     while i < len(list):
