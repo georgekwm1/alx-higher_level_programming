@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Definition of a text indentation function"""
-
 def text_indentation(text):
     """
     This function indents a text.
