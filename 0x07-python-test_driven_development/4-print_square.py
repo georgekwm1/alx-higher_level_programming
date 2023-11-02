@@ -7,6 +7,7 @@ def print_square(size):
 
     Args:
     size (int): number of '#' to print.
+    
     Returns:
     Prints '#' based on the number specified.
     """
