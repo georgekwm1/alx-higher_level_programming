@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-class LockedClass():
+class LockedClass:
     __slots__ = ('first_name',)  # Define allowed attribute(s) here
     
     def __init__(self, first_name):
