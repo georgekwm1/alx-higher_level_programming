@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+"""
+Definition of a fuction that multipies 2 matrices
+"""
 
 def matrix_mul(m_a, m_b):
     """
