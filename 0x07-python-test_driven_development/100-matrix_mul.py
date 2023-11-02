@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
 """
 Definition of a fuction that multipies 2 matrices
 """
@@ -44,9 +43,9 @@ def matrix_mul(m_a, m_b):
         if not len(rows) == len(m_b[0]):
             raise TypeError("each row of m_b must be of the same size")
         
-    result = [[0]*len(m_b) for _ in range(len(m_a))]
+    result = [[0]*len(m_b[0]) for _ in range(len(m_a))]
     for i in range(len(m_a)):
-        for j in range(len(m_b)):
-            for k in range(len(m_b[0])):
+        for j in range(len(m_b[0])):
+            for k in range(len(m_b)):
                 result[i][j] += m_a[i][k] * m_b[k][j]
     return result
