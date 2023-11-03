@@ -28,8 +28,11 @@ def matrix_mul(m_a, m_b):
 
     if not m_a or not any(m_a):
         raise ValueError("m_a can't be empty")
-    if not m_a or not any(m_b):
+    if not m_b or not any(m_b):
         raise ValueError("m_b can't be empty")
+    
+    if len(m_a) == 0 and len(m_b) == 0:
+        raise ValueError("Input list of lists")
     
     if not all(isinstance(value, (int, float)) for row in m_a for value in row):
         raise TypeError("m_a should contain only integers or floats")
