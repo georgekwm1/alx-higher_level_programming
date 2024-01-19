@@ -1,4 +1,4 @@
-#Create a 2nd table in the database
+--Create a 2nd table in the database
 CREATE TABLE IF NOT EXISTS `second_table` (
     `id` INT ,
     `name` VARCHAR(250) NOT NULL,
