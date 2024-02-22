@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-import MySQLdb
+import mysql.connector as myc
 import sys
 
 """ lists all states from the database hbtn_0e_0_usa"""
-
 if __name__ == "__main__":
-    db = MySQLdb.connect(
+    db = myc.connect(
         host="localhost", user=sys.argv[1], password=sys.argv[2], database=sys.argv[3]
     )
     cursor = db.cursor()
