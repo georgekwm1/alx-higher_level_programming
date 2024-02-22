@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""  lists all states from the database hbtn_0e_0_usa """
 import MySQLdb
 import sys
 
+"""takes in arguments and displays all values in the states table of
+ hbtn_0e_0_usa where name matches the argument"""
 
 if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", user=sys.argv[1],
