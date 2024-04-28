@@ -8,9 +8,12 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    response = requests.get(sys.argv[1])
-    status = response.status_code
-    if status >= 400:
-        print("Error code: ", status)
-    else:
+    try:
+        response = requests.get(sys.argv[1])
+        status = response.status_code
         print(response.text)
+    except response.status_code as e:
+        if e >= 400:
+            print ("Error code: ", e)
+        else:
+            pass

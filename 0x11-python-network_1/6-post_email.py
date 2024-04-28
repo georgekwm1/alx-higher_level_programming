@@ -5,19 +5,15 @@ A Python script that takes in a URL and an email address,\
           as a parameter, and finally displays the body of the response.
 """
 
-import urllib.request
+import requests
 import sys
 
 
 if __name__ == "__main__":
     def post_email(url, email):
-        data = 'email=' + email
-        data = data.encode('utf-8')
-        req = urllib.request.Request\
-            (url, data=data, method='POST')
-        with urllib.request.urlopen(req) as response:
-            body = response.read()
-        print(body.decode('utf-8'))
+        data = {'email': email}
+        response = requests.post(url, data=data)
+        print(response.text)
 
     url = sys.argv[1]
     email = sys.argv[2]

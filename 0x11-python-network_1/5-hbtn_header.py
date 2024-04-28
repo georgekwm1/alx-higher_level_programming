@@ -5,12 +5,11 @@ sends a request to the URL and displays the value of the\
 variable X-Request-Id in the response header
 """
 
-import urllib.request
+import requests
 import sys
 
 if __name__ == "__main__":
-    req = urllib.request.Request(sys.argv[1])
-    with urllib.request.urlopen(req) as response:
-        body = response.read()
-        x_request_id = response.headers.get('X-Request-Id')
+    response = requests.get(sys.argv[1])
+    x_request_id = response.headers['X-Request-Id']
     print(x_request_id)
+    print(response.headers)
