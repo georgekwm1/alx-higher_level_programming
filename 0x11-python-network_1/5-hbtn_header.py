@@ -12,4 +12,3 @@ if __name__ == "__main__":
     response = requests.get(sys.argv[1])
     x_request_id = response.headers['X-Request-Id']
     print(x_request_id)
-    print(response.headers)
