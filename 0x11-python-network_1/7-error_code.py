@@ -15,6 +15,6 @@ if __name__ == "__main__":
             print(body.decode('utf-8'))
     except urllib.error.HTTPError as e:
         if e.code >= 400:
-            print ("Error code: ", e.code)
+            print("Error code: ", e.code)
         else:
             pass
