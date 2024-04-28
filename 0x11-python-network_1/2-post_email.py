@@ -13,8 +13,7 @@ if __name__ == "__main__":
     def post_email(url, email):
         data = 'email=' + email
         data = data.encode('utf-8')
-        req = urllib.request.Request\
-            (url, data=data, method='POST')
+        req = urllib.request.Request(url, data=data, method='POST')
         with urllib.request.urlopen(req) as response:
             body = response.read()
         print(body.decode('utf-8'))
