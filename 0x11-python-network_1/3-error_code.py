@@ -21,4 +21,3 @@ if __name__ == "__main__":
             print(body.decode('utf-8'))
     except urllib.request.HTTPError as e:
         print("Error code:", e.code)
-
